@@ -137,7 +137,8 @@ Questions=['Does Sanofi develop a risk management scheme to prevent industrial a
 Topics=[['risk management', 'safety workers', 'industrial accidents']]
 harshQA_pipeline.predict(Question,Topics)
 ```
-
+![Query Expansion](https://github.com/wlambert01/harshQA/blob/master/images/example0.png)
+![Bert Reranker](https://github.com/wlambert01/harshQA/blob/master/images/example1.png)
 ### Call the whole QA pipeline from bash
 
 Given an input query csv file you can call the pipeline to make predictions and save results in an output_dir.
