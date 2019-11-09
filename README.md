@@ -24,6 +24,7 @@ The package also includes scikit learn wrappers for well known model such as Tf-
   - [Training models](#Training-models)
   - [Making predictions](#Making-predictions)
   - [Call the whole QA pipeline from bash](#Call-the-whole-QA-pipeline-from-bash)
+- [Evaluation on ESG Annual Reports](#Evaluation-on-ESG-Annual-Reports)
 - [References](#References)
 
 ## HarshQA Package
@@ -179,7 +180,8 @@ Bash command lines:
       --output_dir="./output"\
       --use_tpu=False
 ```
-
+## Evaluation on ESG Annual Reports
+['ESG Precision at 3'](https://github.com/wlambert01/harshQA/blob/master/images/example3.png)
 ## References
 
 | Type                 | Title                                                                                                                                        | Author                                                                                 | Year |
