@@ -181,7 +181,7 @@ Bash command lines:
       --use_tpu=False
 ```
 ## Evaluation on ESG Annual Reports
-['ESG Precision at 3'](https://github.com/wlambert01/harshQA/blob/master/images/example3.png)
+!['ESG Precision at 3'](https://github.com/wlambert01/harshQA/blob/master/images/example3.png)
 ## References
 
 | Type                 | Title                                                                                                                                        | Author                                                                                 | Year |
