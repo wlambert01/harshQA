@@ -5,6 +5,9 @@ An End-To-End Closed Domain Question Answering System designed for non-factoid q
 HarshQA is a hybrid Q&A system composed of an enhanced Tf-Idf model and a Bert-ranker finetuned on passage similarity. The retriever uses query expansion and performs short text clustering. Bert is finally used to select and re-order the best candidate that might answer the input query.
 The package also includes scikit learn wrappers for well known model such as Tf-Idf, Infersent (GloVe/fasText) and Bert pretrained.
 
+![Query Expansion](https://github.com/wlambert01/harshQA/blob/master/images/example0.png)
+![Bert Reranker](https://github.com/wlambert01/harshQA/blob/master/images/example1.png)
+
 ## Table of Contents <!-- omit in toc -->
 
 - [HarshQA Package](#Harsh-QA-Package)
