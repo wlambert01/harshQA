@@ -181,6 +181,14 @@ Bash command lines:
       --use_tpu=False
 ```
 ## Evaluation on ESG Annual Reports
+
+We annotated more than 3000 answers to evaluate harshQA on ESG questionnaires composed of complex questions.
+Given the fact, some questions do not possess answers in the corpus, we made our own benchmark.
+We distinguished three case:
+- Answers: pertinent sentences that are very likely to answer the query
+- Clue: sentences linked to query topic(s) but which do not provide enough evidence to answer
+- Off: off-topics sentences
+
 !['ESG All Scores'](https://github.com/wlambert01/harshQA/blob/master/images/example2.png)
 !['ESG Precision at 3'](https://github.com/wlambert01/harshQA/blob/master/images/example3.png)
 
