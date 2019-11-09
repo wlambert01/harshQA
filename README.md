@@ -54,13 +54,14 @@ Experiments have been done with:
 
 ### Installing Tika on Windows with a proxy
 
-Tika is simply the best solution to retrieve the content of a pdf files yet. Other libraries fail to handle linebreaks and manage different encodings. To install tika just enter ```bash pip install tika ```
+Tika is simply the best solution to retrieve the content of a pdf files yet. Other libraries fail to handle linebreaks and manage different encodings. 
 
-However if you have a proxy you need to go through this steps
- 
+To install tika without proxies installed :
 ```bash
 pip install tika
 ```
+To install tika with a proxy you need to go through this steps:
+
 
 ### Installing pattern 
 
