@@ -11,10 +11,10 @@ The package also includes scikit learn wrappers for well known model such as Tf-
 
 ## Table of Contents <!-- omit in toc -->
 
-- [HarshQA Package](#Harsh-QA-Package)
+- [HarshQA Package](#HarshQA-Package)
 - [Installation](#Installation)
   - [From source](#From-source)
-  - [Download pretrained models and data](#Download-data)
+  - [Download pretrained models and data](#Download-pretrained-models-and-data)
   - [Hardware Requirements](#Hardware-Requirements)
   - [Installing Tika on Windows with a proxy](#Installing-Tika-on-Windows-with-a-proxy)
   - [Installing pattern](#Installing-pattern)
@@ -76,7 +76,7 @@ cd pattern
 python setup.py install
 ```
 
-### Downloading pre-trained models and data
+### Download pretrained models and data
 
 You can download the pretrained models and data manually with our download functions:
 
@@ -101,6 +101,9 @@ You also need to download our finetuned Bert model that can be downloaded [here]
 #### Manual
 
 To use `harshQA` you need to create a pandas dataframe with the following columns:
+
+- The first directory is always the corpus to predict
+-
 
 | directory_index             | paragraphs    | raw_paragraphs                                         |
 | ----------------- | ------------------------------------------------------ | -------------------|
@@ -127,20 +130,22 @@ Fit the pipeline on your corpus using the pre-trained reader:
 
 ```python
 from harshQA_pdfreader.reader import pdfconverter
-df = pdfconverter(['your_pdf_directories'])
-harshQA_pipeline = QAPipeline(m5_args)
-harshQA_pipeline.fit_reader()
+df_train = pdfconverter(['your_pdf_directories'])
+harshQA_pipeline = QAPipeline()
+harshQA_pipeline.fit_reader(df_train)
 harshQA_pipeline.fit()
 ```
 
 
 ### Making predictions
 
-To get the best prediction given an input query:
+To get the best prediction given an input query, and optionnal topic(s):
 
 ```python
-Questions=['Does Sanofi develop a risk management scheme to prevent industrial accidents and to ensure safety for all its workers']
-Topics=[['risk management', 'safety workers', 'industrial accidents']]
+df_predict=pdfconverter(['your_pdf_directories'])
+harshQA_pipeline.fit_reader(df_predict)
+Questions=['Your questions']
+Topics=[['Your important topics per question']]
 harshQA_pipeline.predict(Question,Topics)
 ```
 
