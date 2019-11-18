@@ -103,7 +103,7 @@ You also need to download our finetuned Bert model that can be downloaded [here]
 To use `harshQA` you need to create a pandas dataframe with the following columns:
 
 - The first directory is always the corpus to predict
--
+
 
 | directory_index             | paragraphs    | raw_paragraphs                                         |
 | ----------------- | ------------------------------------------------------ | -------------------|
